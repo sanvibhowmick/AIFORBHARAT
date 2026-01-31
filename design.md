@@ -126,7 +126,7 @@ The system implements a carefully orchestrated 6-stage pipeline:
 2. **Ingestion & Anti-Retry Shield**
    - Message ID tracking in memory set (5-minute window)
    - Duplicate detection prevents expensive re-processing
-   - User acknowledgment sent immediately ("Sunte paachhi... let me check")
+   - User acknowledgment sent immediately 
 
 3. **Normalization (Whisper Processing)**
    - Voice messages transcribed using OpenAI Whisper
@@ -141,7 +141,7 @@ The system implements a carefully orchestrated 6-stage pipeline:
 
 5. **Refinement (Didi Refiner)**
    - GPT-4o-mini post-processing for cost optimization
-   - Complex agent outputs simplified to "Benglish" or Hindi
+   - Complex agent outputs simplified to local languages
    - 250-token response limit for cost control
 
 6. **Egress (WhatsApp Response)**
@@ -176,7 +176,7 @@ The system implements comprehensive cost controls including thread ID management
 
 **Key Features:**
 - Uses GPT-4o-mini (90% cheaper than GPT-4o) for final response generation
-- Converts complex agent outputs into simple "Benglish" or Hindi
+- Converts complex agent outputs into simple local languages
 - 250-token response limit ensures concise, actionable guidance
 - Maintains empathetic tone while reducing technical complexity
 
@@ -263,5 +263,6 @@ Each specialized agent has access to domain-specific tools that provide real-wor
 **Memory Tools:** User context retrieval and conversation history
 **Notification Tools:** WhatsApp message sending and emergency alerts
 **Community Tools:** Analytics and reporting for institutional users
+
 
 This design ensures that EmpowerNet operates as a true "Digital Sisterhood" - combining the intelligence of AI with the warmth and practical support of a community network, while maintaining strict cost controls and safety mechanisms that make it sustainable and reliable for vulnerable users.    
